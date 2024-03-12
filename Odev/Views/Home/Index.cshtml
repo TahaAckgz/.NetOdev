@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Odev.Models.Entities.Kitaplar>
+
+
+    
+    @{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+@foreach (var kitap in Model)
+    {
+        <h3>@kitap.Ad</h3>
+        <h3>@kitap.Ozet</h3>
+        <h3>@kitap.SayfaSayisi</h3>
+        
+    }
+  
